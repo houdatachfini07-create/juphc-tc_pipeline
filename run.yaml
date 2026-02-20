@@ -7,9 +7,11 @@ spec:
     name: tax-calculator-pipeline
   params:
     - name: repo-url
-      value: "https://github.com/VOTRE_NOM/VOTRE_REPO.git"
+      value: "https://github.com/houdatachfini07-create/juphc-tc_pipeline.git"
     - name: branch-name
       value: "main"
+    - name: image-name
+      value: "us.icr.io/votre-namespace/tax-calculator:latest"
   workspaces:
     - name: shared-workspace
       persistentVolumeClaim:
